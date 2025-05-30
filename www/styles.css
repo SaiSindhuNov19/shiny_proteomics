@@ -1,0 +1,203 @@
+/* styles.css */
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Dark text for contrast */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar-default {
+  background-color: #87CEEB; /* Sky blue */
+  border-color: #87CEEB;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-default .navbar-brand {
+  color: #000000; /* Black text for contrast */
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #000000; /* Black text for contrast */
+  font-weight: 500;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FFB6C1; /* Light pink on hover */
+  background-color: transparent;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #FFB6C1; /* Light pink */
+  color: #000000; /* Black text for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h4 {
+  color: #000000; /* Black text for contrast */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Main panel styling */
+.main-panel {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.main-panel h4 {
+  color: #000000; /* Black for headings */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #87CEEB; /* Sky blue */
+  border-color: #87CEEB;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6ca6cd; /* Darker sky blue on hover */
+  border-color: #6ca6cd;
+}
+
+/* File input styling */
+.file-input {
+  margin-bottom: 20px;
+}
+
+.file-input label {
+  font-weight: 500;
+  color: #000000; /* Black text */
+}
+
+/* Help text styling */
+.help-text {
+  color: #7f8c8d; /* Gray for subtle text */
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* Table styling */
+.dataTables_wrapper {
+  margin-top: 20px;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+  margin-bottom: 20px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 5px 10px;
+  margin: 0 2px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #87CEEB; /* Sky blue on hover */
+  color: #fff;
+  border-color: #87CEEB;
+}
+
+/* Plotly chart styling */
+.plotly-chart {
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%; /* Ensure it fills the column */
+}
+
+/* Data table styling */
+.data-table {
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%; /* Ensure it fills the column */
+}
+
+/* Heatmap styling */
+#msgf_heatmap {
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* 3D plot styling */
+#rt3D_plot {
+  width: 100%; /* Ensure it fills the column */
+  margin-left: 0;
+  padding-left: 0;
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #87CEEB; /* Sky blue scrollbar */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6ca6cd; /* Darker sky blue on hover */
+}
+
+/* Align plots to the left */
+.plotly-chart, .rt3d-plot {
+  text-align: left;  /* Align content to the left */
+  margin-left: 0;    /* Remove default margin */
+  padding-left: 0;   /* Remove default padding */
+}
+
+/* Adjust the layout of the fluidRow and columns */
+.fluid-row {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start;     /* Align items to the top */
+  flex-wrap: wrap; /* Allow wrapping of columns */
+}
+
+.column {
+  margin-right: 20px; /* Add spacing between columns if needed */
+}
